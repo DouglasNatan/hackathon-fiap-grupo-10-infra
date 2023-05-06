@@ -29,12 +29,12 @@ resource "google_compute_instance" "dev-env" {
 
   service_account {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = "hackathon-fiap-grupo-10@grupo-10-384916.iam.gserviceaccount.com"
+    email  = "terraform@grupo-10-384916.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
 }
 
-resource "google_artifact_registry_repository" "hackathon-fiap-grupo-10-artifact-registry" {
+resource "google_artifact_registry_repository" "hackathonfiapgrupo10-artifact-registry" {
   location = var.region
   repository_id = "hackathon-fiap-grupo-10"
   description = "Imagens Docker"
