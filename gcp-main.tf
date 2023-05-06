@@ -29,7 +29,7 @@ resource "google_compute_instance" "dev-env" {
 
   service_account {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = "terraform@grupo-10-384916.iam.gserviceaccount.com"
+    email  = "998345109999-compute@developer.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
 }
